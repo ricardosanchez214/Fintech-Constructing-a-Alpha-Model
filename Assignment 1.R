@@ -47,6 +47,9 @@ finratio.AAPL <- funddata.AAPL_new[,c(2,22,47,30)]
 finratio.AMZN <- funddata.AMZN_new[,c(2,22,47,30)]
 finratio.TSLA <- funddata.TSLA_new[,c(2,22,47,30)]
 
+#Economic data
+World.OilPrice <- read.csv( "crude-oil-prices.csv", header = TRUE)
+World.OilPrice_new <- World.OilPrice[-c(1:149,161), -1:-2]
 
 
 ################################################################################
